@@ -1,4 +1,4 @@
-/*const path = require("path");
+const path = require("path");
 const dotenv = require("dotenv");
 
 dotenv.config({
@@ -26,21 +26,7 @@ const startServer = async () => {
   }
 };
 
-startServer();*/
+startServer();
 
 
-
-const express = require("express");
-
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Backend working");
-});
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
-});
 
