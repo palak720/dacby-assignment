@@ -1,4 +1,9 @@
-require("dotenv").config();
+const path = require("path");
+const dotenv = require("dotenv");
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env"),
+});
 
 const app = require("./app");
 const connectDB = require("./config/db");
@@ -22,4 +27,3 @@ const startServer = async () => {
 };
 
 startServer();
-
